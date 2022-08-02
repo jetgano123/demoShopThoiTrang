@@ -1,0 +1,3275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fd1b617bbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Shop Thời Trang</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="banner" class="container text-center px-0 d-flex">
+            <a class="header position-relative d-block" href="#">
+                <div class="banner">CHÀO HÈ SÔI ĐỘNG - MỎI TAY SĂN QUÀ - ƯU ĐÃI X3</div>
+            </a>
+            <button type="button" onclick="closeBanner()" class="btn-close" aria-label="Close"></button>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="img/icon/logo.webp" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" data-bs-target="#navbarTrangChu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTrangChu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                Trang Chủ
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">123</a></li>
+                                <li><a href="#" class="dropdown-item">123</a></li>
+                                <li><a href="#" class="dropdown-item">123</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="dropdownFlashSale" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/icon/flashsale.png" alt="" class="flash"> Chương Trình Khuyến Mãi
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Flash Sale</a></li>
+                                <li><a href="#" class="dropdown-item">Black Friday</a></li>
+                                <li><a href="#" class="dropdown-item">Xmas</a></li>
+                                <li><a href="#" class="dropdown-item">FnB</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Đơn Hàng</a>
+                        </li>
+                        <li class="nav-itemm">
+                            <a href="#" class="nav-link active">Hệ Thống Cửa Hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quick-access">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a>
+                        <a href="#" class="nav-link"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#" class="nav-link"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div id="carouselBannerThoiTrang" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel/slider_1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/slider_2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerThoiTrang"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerThoiTrang"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row row-cols-4">
+            <div class="policies col-6 col-lg-3 d-sm-block d-lg-flex"><img src="img/icon/policies_icon_1.webp" alt="">
+                <div class="text-box">
+                    <div class="tb-title fw-bold">
+                        Miễn Phí Vận Chuyển
+                    </div>
+                    <div class="tb-text text-secondary">
+                        Nhận hàng trong vòng 7 ngày
+                    </div>
+                </div>
+            </div>
+            <div class="policies col-6 col-lg-3 d-sm-block d-lg-flex"><img src="img/icon/policies_icon_2.webp" alt="">
+                <div class="text-box">
+                    <div class="tb-title fw-bold">
+                        Quà Tặng Hấp Dẫn
+                    </div>
+                    <div class="tb-text text-secondary">
+                        Nhiều ưu đãi khuyến mãi hot
+                    </div>
+                </div>
+            </div>
+            <div class="policies col-6 col-lg-3 d-sm-block d-lg-flex"><img src="img/icon/policies_icon_3.webp" alt="">
+                <div class="text-box">
+                    <div class="tb-title fw-bold">
+                        Đảm Bảo Chất Lượng
+                    </div>
+                    <div class="tb-text text-secondary">
+                        Sản phẩm đã được kiểm định
+                    </div>
+                </div>
+            </div>
+            <div class="policies col-6 col-lg-3 d-sm-block d-lg-flex"><img src="img/icon/policies_icon_4.webp" alt="">
+                <div class="text-box">
+                    <div class="tb-title fw-bold">
+                        Hotline: 19001993
+                    </div>
+                    <div class="tb-text text-secondary">
+                        Dịch vụ hỗ trợ bạn 24/7
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="ega-style">
+        <div class="container">
+            <div class="section-title">
+                Thời trang EGA
+            </div>
+            <div class="row d-none d-lg-flex">
+                <div class="col-lg-2">
+                    <div class="product">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <img src="img/product/season_coll_1_img_large.webp" alt="">
+                            </div>
+                            <div class="product-name">
+                                Đầm
+                            </div>
+                            <div class="product-quantity">
+                                13 sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <img src="img/product/season_coll_2_img_large.webp" alt="">
+                            </div>
+                            <div class="product-name">
+                                Vest - Blazer
+                            </div>
+                            <div class="product-quantity">
+                                5 sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <img src="img/product/season_coll_3_img_large.webp" alt="">
+                            </div>
+                            <div class="product-name">
+                                Đồ thể thao
+                            </div>
+                            <div class="product-quantity">
+                                10 sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <img src="img/product/season_coll_4_img_large.webp" alt="">
+                            </div>
+                            <div class="product-name">
+                                Đồ bơi
+                            </div>
+                            <div class="product-quantity">
+                                10 sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <img src="img/product/season_coll_5_img_large.webp" alt="">
+                            </div>
+                            <div class="product-name">
+                                Đồ ngủ
+                            </div>
+                            <div class="product-quantity">
+                                5 sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <img src="img/product/season_coll_6_img_large.webp" alt="">
+                            </div>
+                            <div class="product-name">
+                                Áo sơ mi
+                            </div>
+                            <div class="product-quantity">
+                                5 sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselProduct" class="carousel slide d-md-none pointer-event" data-bs-touch="true"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="product">
+                            <a href="#" class="product-link">
+                                <div class="product-image">
+                                    <img src="img/product/season_coll_1_img_large.webp" alt="">
+                                </div>
+                                <div class="product-name">
+                                    Đầm
+                                </div>
+                                <div class="product-quantity">
+                                    13 sản phẩm
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product">
+                            <a href="#" class="product-link">
+                                <div class="product-image">
+                                    <img src="img/product/season_coll_2_img_large.webp" alt="">
+                                </div>
+                                <div class="product-name">
+                                    Vest - Blazer
+                                </div>
+                                <div class="product-quantity">
+                                    5 sản phẩm
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product">
+                            <a href="#" class="product-link">
+                                <div class="product-image">
+                                    <img src="img/product/season_coll_3_img_large.webp" alt="">
+                                </div>
+                                <div class="product-name">
+                                    Đồ thể thao
+                                </div>
+                                <div class="product-quantity">
+                                    10 sản phẩm
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product">
+                            <a href="#" class="product-link">
+                                <div class="product-image">
+                                    <img src="img/product/season_coll_4_img_large.webp" alt="">
+                                </div>
+                                <div class="product-name">
+                                    Đồ bơi
+                                </div>
+                                <div class="product-quantity">
+                                    10 sản phẩm
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product">
+                            <a href="#" class="product-link">
+                                <div class="product-image">
+                                    <img src="img/product/season_coll_5_img_large.webp" alt="">
+                                </div>
+                                <div class="product-name">
+                                    Đồ ngủ
+                                </div>
+                                <div class="product-quantity">
+                                    5 sản phẩm
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product">
+                            <a href="#" class="product-link">
+                                <div class="product-image">
+                                    <img src="img/product/season_coll_6_img_large.webp" alt="">
+                                </div>
+                                <div class="product-name">
+                                    Áo sơ mi
+                                </div>
+                                <div class="product-quantity">
+                                    5 sản phẩm
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="ega-coupon-list">
+        <div class="container">
+            <div class="row d-none d-lg-flex">
+                <div class="col-lg-3">
+                    <div class="coupon d-flex justify-content-between">
+                        <img src="img/coupon/coupon_1_img_medium.webp" alt="">
+                        <div class="coupon-content d-flex flex-column text-center justify-content-between px-3">
+                            <div class="coupon-name">NHẬP MÃ: EGA10</div>
+                            <div class="coupon-des">Mã giảm 10% cho đơn hàng tối thiểu 2tr</div>
+                            <div class="coupon-uses d-flex justify-content-between">
+                                <button type="button" class="coupon-copy"> Sao chép </button>
+                                <div class="coupon-condition"><a href="#">Điều Kiện</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="coupon d-flex justify-content-between">
+                        <img src="img/coupon/coupon_2_img_medium.webp" alt="">
+                        <div class="coupon-content d-flex flex-column text-center justify-content-between px-3">
+                            <div class="coupon-name">NHẬP MÃ: EGA15</div>
+                            <div class="coupon-des">Mã giảm 15% cho đơn hàng tối thiểu 5tr</div>
+                            <div class="coupon-uses d-flex justify-content-between">
+                                <button type="button" class="coupon-copy"> Sao chép </button>
+                                <div class="coupon-condition"><a href="#">Điều Kiện</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="coupon d-flex justify-content-between">
+                        <img src="img/coupon/coupon_3_img_medium.webp" alt="">
+                        <div class="coupon-content d-flex flex-column text-center justify-content-between px-3">
+                            <div class="coupon-name">NHẬP MÃ: EGA2022</div>
+                            <div class="coupon-des">Đồng giá 2tr các sản phẩm <a class="text-decoration-none"
+                                    href="#">Đầm AYADA</a></div>
+                            <div class="coupon-uses d-flex justify-content-between">
+                                <button type="button" class="coupon-copy"> Sao chép </button>
+                                <div class="coupon-condition"><a href="#">Điều Kiện</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="coupon d-flex justify-content-between">
+                        <img src="img/coupon/coupon_4_img_medium.webp" alt="">
+                        <div class="coupon-content d-flex flex-column text-center justify-content-between px-3">
+                            <div class="coupon-name">NHẬP MÃ: EGAFREESHIP</div>
+                            <div class="coupon-des">Miễn phí ship cho đơn hàng tối thiểu 1tr</div>
+                            <div class="coupon-uses d-flex justify-content-between">
+                                <button type="button" class="coupon-copy"> Sao chép </button>
+                                <div class="coupon-condition"><a href="#">Điều Kiện</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselCoupon" class="carousel slide d-md-none pointer-event" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="coupon d-flex justify-content-between">
+                            <img src="img/coupon/coupon_1_img_medium.webp" alt="">
+                            <div class="coupon-content d-flex flex-column text-center justify-content-between px-3">
+                                <div class="coupon-name">NHẬP MÃ: EGA10</div>
+                                <div class="coupon-des">Mã giảm 10% cho đơn hàng tối thiểu 2tr</div>
+                                <div class="coupon-uses d-flex justify-content-between">
+                                    <button type="button" class="coupon-copy"> Sao chép </button>
+                                    <div class="coupon-condition"><a href="#">Điều Kiện</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="coupon d-flex justify-content-between">
+                            <img src="img/coupon/coupon_2_img_medium.webp" alt="">
+                            <div class="coupon-content d-flex flex-column text-center justify-content-between px-3">
+                                <div class="coupon-name">NHẬP MÃ: EGA15</div>
+                                <div class="coupon-des">Mã giảm 15% cho đơn hàng tối thiểu 5tr</div>
+                                <div class="coupon-uses d-flex justify-content-between">
+                                    <button type="button" class="coupon-copy"> Sao chép </button>
+                                    <div class="coupon-condition"><a href="#">Điều Kiện</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="coupon d-flex justify-content-between">
+                            <img src="img/coupon/coupon_3_img_medium.webp" alt="">
+                            <div class="coupon-content d-flex flex-column text-center justify-content-between px-3">
+                                <div class="coupon-name">NHẬP MÃ: EGA2022</div>
+                                <div class="coupon-des">Đồng giá 2tr các sản phẩm <a class="text-decoration-none"
+                                        href="#">Đầm AYADA</a></div>
+                                <div class="coupon-uses d-flex justify-content-between">
+                                    <button type="button" class="coupon-copy"> Sao chép </button>
+                                    <div class="coupon-condition"><a href="#">Điều Kiện</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="coupon d-flex justify-content-between">
+                            <img src="img/coupon/coupon_4_img_medium.webp" alt="">
+                            <div class="coupon-content d-flex flex-column text-center justify-content-between px-3">
+                                <div class="coupon-name">NHẬP MÃ: EGAFREESHIP</div>
+                                <div class="coupon-des">Miễn phí ship cho đơn hàng tối thiểu 1tr</div>
+                                <div class="coupon-uses d-flex justify-content-between">
+                                    <button type="button" class="coupon-copy"> Sao chép </button>
+                                    <div class="coupon-condition"><a href="#">Điều Kiện</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCoupon"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCoupon"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="flash-sale">
+        <div class="container">
+            <div class="flash-sale-title d-block fs-1 fw-bold">
+                GIẢM SỐC 50% <img src="img/icon/flashsale-hot.webp" alt="">
+            </div>
+            <ul class="nav nav-tabs" id="flashSaleTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="hanghieu-tab" data-bs-toggle="tab" data-bs-target="#hanghieu"
+                        type="button" role="tab" aria-controls="hanghieu" aria-selected="true">Hàng Hiệu -50%</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="nangdong-tab" data-bs-toggle="tab" data-bs-target="#nangdong"
+                        type="button" role="tab" aria-controls="nangdong" aria-selected="false">Năng Động Ngày
+                        Hè</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="chaobien-tab" data-bs-toggle="tab" data-bs-target="#chaobien"
+                        type="button" role="tab" aria-controls="chaobien" aria-selected="false">Chào Biển Nắng
+                        Mới</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="flashSaleTabs">
+                <div class="tab-pane fade show active" id="hanghieu" role="tabpanel" aria-labelledby="hanghieu-tab">
+                    <div class="row row-cols-lg-5">
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative d-block">
+                                    <div class="position-absolute promote-card"> Bán chạy </div>
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/primary_1.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_1.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy Arta
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            4,360,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                8,720,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/hanghieu/primary_2.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_2.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy Billy Knit
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,360,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                4,720,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/hanghieu/primary_3.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_3.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy kiểu Dasha
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,830,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                5,660,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/primary_4.jpg" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_4.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy Catarina
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,350,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                4,700,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/hanghieu/primary_5.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_5.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy East Maxi
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,150,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                4,300,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/hanghieu/primary_6.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_6.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm Ngọc San Hô AYDA
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            8,400,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                16,800,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/primary_7.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_7.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm dạ hội Raya
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            5,430,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                10,860,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/hanghieu/primary_8.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_8.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm cổ vuông laura
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,240,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                6,480,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/primary_9.jpg" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_9.jpg" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm xòe Taylor
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,550,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                7,100,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/hanghieu/primary_10.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/hanghieu/secondary_10.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm dạ hội Eva
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            6,540,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                13,080,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nangdong" role="tabpanel" aria-labelledby="nangdong-tab">
+                    <div class="row row-cols-lg-5">
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative d-block">
+                                    <img src="img/product/frame_2.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/primary_1.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_1.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao Ivy Ecostretch
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            990,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,750,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -44%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/nangdong/primary_2.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_2.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao Alie
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,890,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                2,300,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -18%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/nangdong/primary_3.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_3.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao YDO
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,130,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                3,200,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -34%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_2.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/primary_4.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_4.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao Zip Hood
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,350,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                2,300,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -42%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/nangdong/primary_5.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_5.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao Cropped Tank
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,200,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,450,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -18%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/nangdong/primary_6.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_6.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao Shelby Ecomove
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,630,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                2,105,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -23%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_2.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/primary_7.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_7.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao Nina Ecomove
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,236,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/nangdong/primary_8.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_8.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set váy thể thao Bella Ecomove
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,230,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                2,300,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -47%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_2.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/primary_9.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_9.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao Shelby Ecomove
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,250,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,950,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -36%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/nangdong/primary_10.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/nangdong/secondary_10.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thể thao Ellie Bra
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            980,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,780,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -45%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="chaobien" role="tabpanel" aria-labelledby="chaobien-tab">
+                    <div class="row row-cols-lg-5">
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative d-block">
+                                    <img src="img/product/flash_sale/chaohe/primary_1.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_1.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set áo bơi croptop Style
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            980,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,250,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -19%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_3.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+
+                                    <img src="img/product/flash_sale/chaohe/primary_2.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_2.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set áo bơi Rainbow
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,150,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/chaohe/primary_3.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_3.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        TOMMY HILFIGER
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set áo bơi Tandii
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,180,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                2,580,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -16%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/chaohe/primary_4.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_4.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Áo bơi Balconette
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,150,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,730,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -34%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_3.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+
+                                    <img src="img/product/flash_sale/chaohe/primary_5.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_5.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        TOMMY HILFIGER
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đồ Bơi Cheeky Piece
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,380,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                3,280,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -28%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/chaohe/primary_6.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_6.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set đồ bơi kèm áo sơ mi Swing Beach
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,320,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,500,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -12%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/chaohe/primary_7.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_7.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        TOMMY HILFIGER
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Áo bơi Tommy Push Up
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,390,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                2,500,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -45%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/chaohe/primary_8.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_8.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đồ bơi Mango Mermaid
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            987,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,850,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -47%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_3.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/primary_9.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_9.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        CK
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set áo bơi CK
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,430,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,950,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -27%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/flash_sale/chaohe/primary_10.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/flash_sale/chaohe/secondary_10.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set đồ bơi Bottom Body
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,030,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">Xem tất cả ></a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="recommended">
+        <div class="container">
+            <div class="section-title">
+                Set đồ cho bạn
+            </div>
+            <div class="row row-cols-lg-3 d-none d-lg-flex">
+                <div class="col text-center position-relative">
+                    <button id="detail1"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <button id="detail2"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <button id="detail3"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <img class="image-responsive" width="100%" src="img/product/recommended/recommend_1.webp" alt="">
+                    <div class="fs-3">
+                        Set đồ tập Yoga Xuân Hè 2022
+                    </div>
+                    <a href="#">Xem chi tiết</a>
+                </div>
+                <div class="col text-center position-relative">
+                    <button id="detail4"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <button id="detail5"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <button id="detail6"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <img class="image-responsive" width="100%" src="img/product/recommended/recommend_2.webp" alt="">
+                    <div class="fs-3">
+                        Set đồ tập Gym Xuân Hè 2022
+                    </div>
+                    <a href="#">Xem chi tiết</a>
+                </div>
+                <div class="col text-center position-relative">
+                    <button id="detail7"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <button id="detail8"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <button id="detail9"
+                        class="shadow text-secondary border-0 color-disable rounded-circle position-absolute fw-bold">
+                        +
+                    </button>
+                    <img class="image-responsive" width="100%" src="img/product/recommended/recommend_3.webp" alt="">
+                    <div class="fs-3">
+                        Set đồ Bikini Hè 2022
+                    </div>
+                    <a href="#">Xem chi tiết</a>
+                </div>
+            </div>
+            <div id="carouselRecommended" class="carousel slide d-md-none" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselRecommended" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselRecommended" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselRecommended" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <img src="img/product/recommended/recommend_1.webp" class="d-block w-100" alt="">
+                        <h2>Set đồ tập yoga xuân hè 2022</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/product/recommended/recommend_2.webp" class="d-block w-100" alt="...">
+                        <h2>Set đồ tập Gym xuân hè 2022</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/product/recommended/recommend_3.webp" class="d-block w-100" alt="...">
+                        <h2>Set đồ bikini hè 2022</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRecommended"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselRecommended"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="banner">
+        <div class="container">
+            <img class="image-responsive" width="100%" src="img/carousel/slider_2.jpg" alt="">
+        </div>
+    </section>
+    <br>
+    <section class="collection">
+        <div class="container">
+            <div class="section-title">
+                Bộ sưu tập xuân hè
+            </div>
+            <ul class="nav nav-tabs justify-content-center" id="collectionTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-secondary active" id="egaNew-tab" data-bs-toggle="tab"
+                        data-bs-target="#egaNew" type="button" role="tab" aria-controls="egaNew"
+                        aria-selected="true">Ega
+                        New</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-secondary" id="egaSeason-tab" data-bs-toggle="tab"
+                        data-bs-target="#egaSeason" type="button" role="tab" aria-controls="egaSeason"
+                        aria-selected="false">Ega Season</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-secondary" id="topFashion-tab" data-bs-toggle="tab"
+                        data-bs-target="#topFashion" type="button" role="tab" aria-controls="topFashion"
+                        aria-selected="false">Top Fashion</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="collectionTabContent">
+                <div class="tab-pane fade show active" id="egaNew" role="tabpanel" aria-labelledby="egaNew-tab">
+                    <div class="row row-cols-lg-5">
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative d-block">
+                                    <img src="img/product/ega/egaNew/primary_1.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_1.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Áo sơ mi nữ tay dài regular
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,255,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaNew/primary_2_secondary_2.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/primary_2_secondary_2.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set áo Blazer Veda
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            10,900,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                11,200,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -3%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_2.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/egaNew/primary_3.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_3.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Áo Vest Stacey
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            5,670,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                6,500,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -13%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_2.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/egaNew/primary_4.jpg" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_4.jpg" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Áo Vest Harry Mango
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,530,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                3,450,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaNew/primary_5.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_5.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Quần Mason Panny
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,250,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaNew/primary_6.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_6.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm Ngọc San Hô AYDA
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            8,400,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                16,800,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaNew/primary_7.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_7.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm cổ vuông laura
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,240,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                6,480,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_3.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/egaNew/primary_8.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_8.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm kim sa Levic
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,890,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                7,780,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/egaNew/primary_9.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_9.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm voan tầng Ruby
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,890,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                7,780,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_3.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/egaNew/primary_10.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaNew/secondary_10.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm trễ vai Sblack
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            5,300,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                10,600,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="egaSeason" role="tabpanel" aria-labelledby="egaSeason-tab">
+                    <div class="row row-cols-lg-5">
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative d-block">
+                                    <img src="img/product/ega/egaSeason/primary_1.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_1.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Quần âu Lisboa
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,430,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                1,540,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -8%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_2.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_2.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set thun ngắn Boucle Lung Bike Short
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,230,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_3.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_3.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        CK
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Set đồ ngủ CK Fade
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,390,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_4.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_4.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        TOMMY HILFIGER
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Quần Petites Oren
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            4,200,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_5.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_5.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        TOMMY HILFIGER
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Quần Madelyn
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            4,310,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                5,230,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -18%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_6.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_6.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Quần Jordana
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,230,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_7.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_7.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Áo sơ mi Ray Twill
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,389,000<u>đ</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_8.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_8.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        COTTON ON BODY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Quần Mason Panny
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            1,250,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                6,480,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_9.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_9.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy East Maxi
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,150,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                4,300,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/egaSeason/primary_10.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/egaSeason/secondary_10.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm dạ hội Eva
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            6,540,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                13,080,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="topFashion" role="tabpanel" aria-labelledby="topFashion-tab">
+                    <div class="row row-cols-lg-5">
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative d-block">
+                                    <img src="img/product/ega/topFashion/primary_1.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_1.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm cổ vuông Laura
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,240,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                6,480,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/topFashion/primary_2.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_2.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm dạ hội Raya
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            5,430,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                10,860,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_3.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/topFashion/primary_3.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_3.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm kim sa Levic
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,890,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                7,780,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/topFashion/primary_4.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_4.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm Ngọc San Hô AYDA
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            8,400,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                16,800,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_3.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/topFashion/primary_5.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_5.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy East Maxi
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            5,300,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                10,600,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/topFashion/primary_6.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_6.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm voan tầng Ruby
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,890,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                7,780,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/topFashion/primary_7.jpg" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_7.jpg" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        LEVI'S
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Đầm xòe Taylor
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            3,550,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                7,100,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <div class="position-absolute promote-card">
+                                        Bán chạy
+                                    </div>
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/topFashion/primary_8.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_8.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy Arta
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            4,360,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                8,720,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/ega/topFashion/primary_9.webp" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_9.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        MANGO
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy Billy Knit
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,360,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                4,720,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="model-card">
+                                <div class="model-picture position-relative">
+                                    <img src="img/product/frame_1.webp" alt="" width="100%"
+                                        class="frame img-responsive">
+                                    <img src="img/product/ega/topFashion/primary_10.jpg" alt="" width="100%"
+                                        class="primary img-responsive">
+                                    <img src="img/product/ega/topFashion/secondary_10.webp" alt="" width="100%"
+                                        class="secondary img-responsive">
+                                </div>
+                                <div class="model-card-information">
+                                    <div class="model-brand">
+                                        EGANY
+                                        <a href="#" class="heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="model-name">
+                                        Váy Catarina
+                                    </a>
+                                    <div class="model-price-box">
+                                        <div class="model-price">
+                                            2,350,000<u>đ</u>
+                                        </div>
+                                        <div class="discount d-flex">
+                                            <div class="model-price-linedthrough">
+                                                4,700,000<u>đ</u>
+                                            </div>
+                                            <div class="model-price-discount ms-2 ps-2 pe-2">
+                                                -50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">Xem tất cả ></a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="video">
+        <div class="container text-center">
+            <iframe src="https://www.youtube.com/embed/AXOfw9x-hVw" frameborder="0"></iframe>
+        </div>
+    </section>
+    <br>
+    <section class="hot-product">
+        <div class="container">
+            <div class="section-title">
+                Bạn đang xem Sản phẩm Hot <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="row row-cols-lg-5">
+                <div class="col">
+                    <div class="model-card">
+                        <div class="model-picture position-relative d-block">
+                            <img src="img/product/frame_2.webp" alt="" width="100%" class="frame img-responsve">
+                            <img src="img/product/hot/primary_1.webp" alt="" width="100%"
+                                class="primary img-responsive">
+                            <img src="img/product/hot/secondary_1.webp" alt="" width="100%"
+                                class="secondary img-responsive">
+                        </div>
+                        <div class="model-card-information">
+                            <div class="model-brand">
+                                LEVI'S
+                                <a href="#" class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="model-name">
+                                Áo Vest Stacey
+                            </a>
+                            <div class="model-price-box">
+                                <div class="model-price">
+                                    5,670,000<u>đ</u>
+                                </div>
+                                <div class="discount d-flex">
+                                    <div class="model-price-linedthrough">
+                                        6,500,000<u>đ</u>
+                                    </div>
+                                    <div class="model-price-discount ms-2 ps-2 pe-2">
+                                        -13%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="model-card">
+                        <div class="model-picture position-relative d-block">
+                            <img src="img/product/frame_2.webp" alt="" width="100%" class="frame img-responsve">
+                            <img src="img/product/hot/primary_2.webp" alt="" width="100%"
+                                class="primary img-responsive">
+                            <img src="img/product/hot/secondary_2.webp" alt="" width="100%"
+                                class="secondary img-responsive">
+                        </div>
+                        <div class="model-card-information">
+                            <div class="model-brand">
+                                MANGO
+                                <a href="#" class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="model-name">
+                                Áo Vest Amapola
+                            </a>
+                            <div class="model-price-box">
+                                <div class="model-price">
+                                    2,380,000<u>đ</u>
+                                </div>
+                                <div class="discount d-flex">
+                                    <div class="model-price-linedthrough">
+                                        3,200,000<u>đ</u>
+                                    </div>
+                                    <div class="model-price-discount ms-2 ps-2 pe-2">
+                                        -26%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="model-card">
+                        <div class="model-picture position-relative d-block">
+                            <img src="img/product/hot/primary_3_secondary_3.webp" alt="" width="100%"
+                                class="primary img-responsive">
+                            <img src="img/product/hot/primary_3_secondary_3.webp" alt="" width="100%"
+                                class="secondary img-responsive">
+                        </div>
+                        <div class="model-card-information">
+                            <div class="model-brand">
+                                EGANY
+                                <a href="#" class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="model-name">
+                                Set áo Blazer Veda
+                            </a>
+                            <div class="model-price-box">
+                                <div class="model-price-box">
+                                    <div class="model-price">
+                                        10,900,000<u>đ</u>
+                                    </div>
+                                    <div class="discount d-flex">
+                                        <div class="model-price-linedthrough">
+                                            11,200,000<u>đ</u>
+                                        </div>
+                                        <div class="model-price-discount ms-2 ps-2 pe-2">
+                                            -3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="model-card">
+                        <div class="model-picture position-relative d-block">
+                            <img src="img/product/frame_2.webp" alt="" width="100%" class="frame img-responsve">
+                            <img src="img/product/hot/primary_4.jpg" alt="" width="100%" class="primary img-responsive">
+                            <img src="img/product/hot/primary_4.jpg" alt="" width="100%"
+                                class="secondary img-responsive">
+                        </div>
+                        <div class="model-card-information">
+                            <div class="model-brand">
+                                MANGO
+                                <a href="#" class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="model-name">
+                                Áo Vest Harry Mango
+                            </a>
+                            <div class="model-price-box">
+                                <div class="model-price-box">
+                                    <div class="model-price">
+                                        2,530,000<u>đ</u>
+                                    </div>
+                                    <div class="discount d-flex">
+                                        <div class="model-price-linedthrough">
+                                            3,450,000<u>đ</u>
+                                        </div>
+                                        <div class="model-price-discount ms-2 ps-2 pe-2">
+                                            -27%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="model-card">
+                        <div class="model-picture position-relative d-block">
+                            <img src="img/product/hot/primary_5.webp" alt="" width="100%"
+                                class="primary img-responsive">
+                            <img src="img/product/hot/secondary_5.webp" alt="" width="100%"
+                                class="secondary img-responsive">
+                        </div>
+                        <div class="model-card-information">
+                            <div class="model-brand">
+                                EGANY
+                                <a href="#" class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="model-name">
+                                Blazer K.Dress
+                            </a>
+                            <div class="model-price-box">
+                                <div class="model-price-box">
+                                    <div class="model-price">
+                                        3,100,000<u>đ</u>
+                                    </div>
+                                    <div class="discount d-flex">
+                                        <div class="model-price-linedthrough">
+                                            4,230,000<u>đ</u>
+                                        </div>
+                                        <div class="model-price-discount ms-2 ps-2 pe-2">
+                                            -27%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">Xem tất cả</a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="comment">
+        <div class="container">
+            <div class="section-title">
+                Khách hàng đã nói gì
+            </div>
+            <div class="row row-cols-lg-3">
+                <div class="col">
+                    <div class="customer">
+                        <img class="avatar" src="img/customer/cus_review_avatar_1_compact.webp" alt="">
+                        <div class="customer-name">
+                            Liên Hoa
+                        </div>
+                        <div class="customer-rate">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="customer-comment">
+                            Sản phẩm chất lượng, chất vải mềm mát mặc vào rất thoải mái và ôm sát người giúp khoe được
+                            điểm mạnh của tôi, giá cả hợp lý, giao hàng nhanh
+                        </div>
+                        <hr>
+                        <div class="product-comment">
+                            <a href="#"><img src="img/customer/cs_1.webp" alt=""> Đầm dạ hội Raya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="customer">
+                        <img class="avatar" src="img/customer/cus_review_avatar_2_compact.webp" alt="">
+                        <div class="customer-name">
+                            Bích Chi
+                        </div>
+                        <div class="customer-rate">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="customer-comment">
+                            Sản phẩm đẹp, chất liệu mát, mặc vừa người, nhân viên phục vụ rất tận tình và chu đáo, quá
+                            tốt
+                        </div>
+                        <hr>
+                        <div class="product-comment">
+                            <a href="#"><img src="img/customer/cs_2.webp" alt="">Blazer K.Dress</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="customer">
+                        <img class="avatar" src="img/customer/cus_review_avatar_3_compact.webp" alt="">
+                        <div class="customer-name">
+                            Thu Hằng
+                        </div>
+                        <div class="customer-rate">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="customer-comment">
+                            Giao hàng nhanh, anh shipper dễ thương, váy xuất sắc, mặc đẹp lắm, sẽ ửng hộ shop dài
+                            dài.Tốt!!!
+                        </div>
+                        <hr>
+                        <div class="product-comment">
+                            <a href="#"><img src="img/customer/cs_3.webp" alt="">Đầm dạ hội Eva</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="banner">
+        <div class="container">
+            <div class="row row-cols-lg-2">
+                <div class="col">
+                    <a href="#">
+                        <img width="100%" src="img/banner/imgtext_2_img.webp" alt="">
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-between flex-column">
+                    <div class="banner-title">
+                        Xu hướng thời trang 2022
+                    </div>
+                    <div class="banner-text text-secondary">
+                        Khoe eo! Mùa Hè mang đến lời mời gọi hãy để chiếc eo thon là tâm điểm phong cách. BST Miu Miu
+                        ngập tràn crop top với hơi hướng Y2K đầy sức sống. Versace cũng cho thấy làn da rám nắng tuyệt
+                        đẹp khi diện crop top mang dấu ấn thập niên 80. Và crop top còn được thấy ở khắp các BST thời
+                        trang mùa Xuân – Hè 2022 của Chanel, Salvatore Ferragamo, Givenchy, Lanvin,…
+                    </div>
+                    <a href="#" class="detail">
+                        Xem chi tiết
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="instagram">
+        <div class="container">
+            <div class="section-title">
+                @ Follow Instagram
+            </div>
+            <div class="row row-cols-lg-5">
+                <div class="col position-relative">
+                    <a class="insta-link" href="#">
+                        <i class="instaicon fa-brands fa-instagram"></i>
+                        <img src="img/insta/insta_1_img.jpg" alt="" width="100%" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col position-relative">
+                    <a class="insta-link" href="#">
+                        <i class="instaicon fa-brands fa-instagram"></i>
+                        <img src="img/insta/insta_2_img.jpg" alt="" width="100%" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col position-relative">
+                    <a class="insta-link" href="#">
+                        <i class="instaicon fa-brands fa-instagram"></i>
+                        <img src="img/insta/insta_3_img.webp" alt="" width="100%" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col position-relative">
+                    <a class="insta-link" href="#">
+                        <i class="instaicon fa-brands fa-instagram"></i>
+                        <img src="img/insta/insta_4_img.jpg" alt="" width="100%" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col position-relative">
+                    <a class="insta-link" href="#">
+                        <i class="instaicon fa-brands fa-instagram"></i>
+                        <img src="img/insta/insta_5_img.jpg" alt="" width="100%" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="brand">
+        <div class="container">
+            <div class="section-title">
+                Thương hiệu nổi bật
+            </div>
+            <div class="row row-cols-lg-5">
+                <div class="col">
+                    <a href="#" class="brand-link">
+                        <img src="img/brand/brand_1.webp" width="100%" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="brand-link">
+                        <img src="img/brand/brand_2.webp" width="100%" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="brand-link">
+                        <img src="img/brand/brand_3.webp" width="100%" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="brand-link">
+                        <img src="img/brand/brand_4.webp" width="100%" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="brand-link">
+                        <img src="img/brand/brand_5.webp" width="100%" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="news">
+        <div class="container">
+            <div class="news-title he">
+                <a href="#">
+                    TIN TỨC
+                </a>
+            </div>
+            <br>
+            <div class="row row-cols-lg-2">
+                <div class="col">
+                    <div class="news-card flex-column">
+                        <a href="#">
+                            <img width="100%" src="img/banner/tintuc_1.webp" class="img-responsive" alt="">
+                        </a>
+                        <div class="new-content">
+                            <div class="new-title mt-3">
+                                <a href="#">
+                                    Cảm hứng cổ điển “hồi sinh” thổi làn gió mới vào xu hướng phụ kiện thu đông 2022
+                                </a>
+                            </div>
+                            <div class="new-posted-time mt-3">
+                                <i class="fa-solid fa-calendar-days"></i> Th 3 14/06/2022</a>
+                                <i class="fa-solid fa-clock"></i> 2 phút đọc</a>
+                            </div>
+                            <div class="new-content mt-3">
+                                Trong khi những chiếc túi xách có xu hướng nhỏ dần đều, phụ kiện bông tai càng dài lại
+                                càng được lòng các fashionistas trong mùa mốt...
+                            </div>
+                            <a href="#" class="detail mt-3">Đọc tiếp</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 500px;" class="col overflow-auto">
+                    <div class="news-card justify-content-between mt-3 ">
+                        <a class="m-3" href="#">
+                            <img width="100%" src="img/banner/tintuc_2_1.webp" class="img-responsive rounded" alt="">
+                        </a>
+                        <div class="new-content d-flex flex-wrap flex-column">
+                            <div class="new-title">
+                                <a href="#">
+                                    Sự lên ngôi của 6 xu hướng hứa hẹn sẽ làm bùng nổ làng thời trang hè 2022
+                                </a>
+                            </div>
+                            <div class="new-posted-time">
+                                Th 5 09/06/2022
+                            </div>
+                            <div class="new-content">
+                                Chào mùa mới, các tín đồ thời trang lại rục rịch tìm kiếm ý tưởng độc – lạ để refresh...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card justify-content-between mt-3">
+                        <a class="m-3" href="#">
+                            <img width="100%" src="img/banner/tintuc_2_2.webp" class="img-responsive rounded" alt="">
+                        </a>
+                        <div class="new-content d-flex flex-wrap flex-column">
+                            <div class="new-title">
+                                <a href="#">
+                                    Bye bye ngay mái tóc bết dính khó ưa chỉ với 6 mẹo siêu dễ
+                                </a>
+                            </div>
+                            <div class="new-posted-time">
+                                Th 5 09/06/2022
+                            </div>
+                            <div class="new-content">
+                                Tình trạng mái tóc đổ dầu bết dính, khó chịu và ngứa ngáy vào những ngày hè nắng “đổ
+                                lửa”...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card justify-content-between mt-3">
+                        <a class="m-3" href="#">
+                            <img width="100%" src="img/banner/tintuc_2_3.webp" class="img-responsive rounded" alt="">
+                        </a>
+                        <div class="new-content d-flex flex-wrap flex-column">
+                            <div class="new-title">
+                                <a href="#">
+                                    Nghệ thuật tiết kiệm tiền hiệu quả từ những tín đồ sống tối giản
+                                </a>
+                            </div>
+                            <div class="new-posted-time">
+                                Th 5 09/06/2022
+                            </div>
+                            <div class="new-content">
+                                Những mẹo sau có thể giúp bạn lập được kế hoạch quản lý tài chính chặt chẽ nhưng vẫn
+                                cảm...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card justify-content-between mt-3">
+                        <a class="m-3" href="#">
+                            <img width="100%" src="img/banner/tintuc_2_4.webp" class="img-responsive rounded" alt="">
+                        </a>
+                        <div class="new-content d-flex flex-wrap flex-column">
+                            <div class="new-title">
+                                <a href="#">
+                                    Diện #OOTD siêu xinh, loạt người đẹp Việt tỏa sáng hơn cả nắng hè
+                                </a>
+                            </div>
+                            <div class="new-posted-time">
+                                Th 5 09/06/2022
+                            </div>
+                            <div class="new-content">
+                                Mùa hè đã trôi qua được nửa chặng đường, trên trang cá nhân của hotgirl Việt cũng ngập
+                                tràn các...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card justify-content-between mt-3">
+                        <a class="m-3" href="#">
+                            <img width="100%" src="img/banner/tintuc_2_5.jpg" class="img-responsive rounded" alt="">
+                        </a>
+                        <div class="new-content d-flex flex-wrap flex-column">
+                            <div class="new-title">
+                                <a href="#">
+                                    Bí kíp da mịn dáng xinh nằm trong 8 loại trà thiên nhiên này
+                                </a>
+                            </div>
+                            <div class="new-posted-time">
+                                Th 5 09/06/2022
+                            </div>
+                            <div class="new-content">
+                                Không những mang đến những hiệu quả đáng ngờ trong việc cải thiện làn da và vóc dáng,
+                                trà thảo...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="more">
+                <a href="#">Xem tất cả ></a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="footer">
+        <img width="100%" src="img/footer_block.png" class="img-responsive" alt="">
+        <div class="container">
+            <div class="row rol-cols-4 text-white">
+                <div class="col">
+                    <a href="#" class="logo-footer">
+                        <img width="100%" src="img/icon/logo-footer.webp" class="img-responsive" alt="">
+                    </a>
+                    <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: 150/8 Nguyễn Duy Cung, Phường 12, Tp.HCM</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> Số điện thoại: <a href="#">19001393</a></p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: <a href="#">support@egany.com</a></p>
+                    © Bản quyền thuộc về <a href="#">EGANY</a>| Cung cấp bởi <a href="#">Haravan</a>
+                </div>
+                <div class="col">
+                    <h6>CHÍNH SÁCH</h6>
+                    <p><a href="#">Giới thiệu</a></p>
+                    <p><a href="#">Hệ thống cửa hàng</a></p>
+                    <p><a href="#">Câu hỏi thường gặp</a></p>
+                    <p><a href="#">Gọi điện đặt hàng</a></p>
+                </div>
+                <div class="col">
+                    <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                    <p><a href="#">Thông tin liên hệ</a> </p>
+                    <p><a href="#">Chính sách giao hàng</a> </p>
+                    <p><a href="#">Chính sách đổi trả</a> </p>
+                    <p><a href="#">Chính sách bán hàng</a> </p>
+                </div>
+                <div class="col">
+                    <h6>Đăng kí nhận tin</h6>
+                    <div class="input-group mb-3 position-relative">
+                        <input type="text" class="form-control rounded-pill" placeholder="Nhập địa chỉ email"
+                            aria-label="Username" aria-describedby="email">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-pill position-absolute end-0 bg-dark text-light"
+                                id="email"> Đăng Ký </span>
+                        </div>
+                    </div>
+                    <div class="linkgroup d-flex justify-content-between">
+                        <a href="#">
+                            <img src="img/icon/facebook.webp" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/icon/zalo.webp" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/icon/instagram.webp" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/icon/youtube.webp" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/icon/tiktok.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-footer">
+                <div class="row row-cols-lg-4">
+                    <div class="col"></div>
+                    <div class="col">
+                        <a href="#">
+                            <img width="100%" src="img/icon/logo_bct.webp" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img width="100%" src="img/icon/footer_trustbadge.webp" alt="" class="img-responsive">
+                        </a></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </div>
+    <button class="contact" onclick="toTheTop()" id="pushToTop" title="Go to top"> <i class="fa-solid fa-chevron-up"></i></button>
+    <button class="contact" id="messenger" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></button>
+    <button class="contact" id="phone" title="Phone"><i class="fa-solid fa-phone"></i></button>
+</body>
+
+</html>

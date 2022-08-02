@@ -1,0 +1,416 @@
+a.header,
+a.header:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    background-color: orangered;
+    width: 100%;
+    height: auto;
+}
+
+img.logo {
+    width: 70px;
+}
+
+img.flash {
+    width: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+
+@media only screen and (max-width:1000px) {
+    .quick-access {
+        display: none;
+    }
+
+    .policies {
+        text-align: center;
+    }
+}
+
+.header .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.product {
+    text-align: center;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-quantity {
+    color: rgb(164, 164, 164);
+}
+
+a.product-link {
+    color: black;
+    text-decoration: none;
+
+}
+
+.product:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.coupon {
+    box-shadow: 0 0 2px 0;
+    border: 1px gray solid;
+    padding: 10px;
+}
+
+button.coupon-copy {
+    color: white;
+    background-color: rgb(245, 138, 32);
+    border: none;
+}
+
+button.coupon-copy:hover {
+    background-color: rgb(239, 168, 98);
+}
+
+.coupon-condition a,
+.coupon-condition a:hover {
+    color: black;
+}
+
+.flash-sale-title img {
+    width: 50px;
+}
+
+.model-card {
+    margin: 10px;
+}
+
+.model-picture:hover {
+    box-shadow: 0 0 8px 0 gainsboro;
+}
+
+.model-picture:hover img.secondary {
+    transform: scale(0.95);
+    transition: 0.5s;
+    z-index: 4;
+}
+
+.model-picture:hover img.frame {
+    transform: scale(0.95);
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.model-picture:hover img.primary {
+    transform: scale(0.95);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+img.primary {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+img.secondary {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 1;
+}
+
+.promote-card {
+    background-color: gainsboro;
+    left: 20px;
+    z-index: 1000;
+    border: 1px rgb(164, 164, 164) solid;
+    padding: 2px;
+}
+
+img.frame {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 5;
+}
+
+.model-card-information {
+    margin: 10px;
+}
+
+a.heart,
+a.heart:hover {
+    float: right;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.model-brand {
+    color: gainsboro;
+}
+
+a.model-name {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.model-price {
+    color: rgb(216, 65, 68);
+    font-weight: bold;
+}
+
+.model-price-linedthrough {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.model-price-discount {
+    background-color: rgb(216, 65, 68);
+    color: white;
+    border-radius: 10px;
+}
+
+.more a {
+    border: 1px black solid;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.more {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.more a:hover {
+    color: white;
+    background: black;
+    transition: 0.5s;
+}
+
+button#detail1 {
+    top: 130px;
+    left: 250px;
+}
+
+button#detail2 {
+    top: 35%;
+    left: 50%;
+}
+
+button#detail3 {
+    top: 53%;
+    left: 40%;
+}
+
+button#detail4 {
+    right: 45%;
+    top: 20%;
+}
+
+button#detail5 {
+    right: 50%;
+    top: 30%;
+}
+
+button#detail6 {
+    right: 50%;
+    top: 40%;
+}
+
+button#detail7 {
+    right: 40%;
+    top: 30%;
+}
+
+button#detail8 {
+    right: 40%;
+    top: 53%;
+}
+
+button#detail9 {
+    bottom: 30%;
+    left: 30%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: xx-large;
+    margin: 20px;
+}
+
+img.avatar {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+section.comment {
+    background-color: rgb(245, 245, 245);
+}
+
+.customer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.customer-rate {
+    color: orange;
+}
+
+.product-comment a {
+    color: black;
+    text-decoration: none;
+}
+
+.product-comment img {
+    margin: 10px;
+    width: 50px;
+    height: 80px;
+}
+
+.banner-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.banner-text {
+    font-size: x-large;
+}
+
+a.detail {
+    color: black;
+}
+
+.instaicon {
+    position: absolute;
+    background-color: white;
+    top: 45%;
+    left: 45%;
+    padding: 10px;
+    color: black;
+    border-radius: 50%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.insta-link:hover img {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.insta-link:hover .instaicon {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+a.brand-link:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.news-title {
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.news-title a,
+.news-title a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.news-card {
+    display: flex;
+}
+
+.new-title a {
+    color: black;
+    text-decoration: none;
+}
+
+.new-posted-time {
+    color: gray;
+    text-decoration: none;
+}
+
+.new-content {
+    color: gray;
+}
+
+.footer {
+    background-color: rgb(46, 46, 46);
+}
+
+.footer p a{
+    color: white;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer p a:hover{
+    color: blue;
+    text-decoration: none;
+}
+button#pushToTop{
+    position: fixed;
+    bottom: 30%;
+    right: 1%;
+    z-index: 1000;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+button#messenger{
+    position: fixed;
+    bottom: 10%;
+    right: 1%;
+    z-index: 1000;
+    border: none;
+    background-color: rgb(10,124,255);
+    color: white;
+    border-radius: 50%;
+}
+button#zalo{
+    position: fixed;
+    bottom: 15%;
+    right: 1%;
+    z-index: 1000;
+    border: none;
+    background-color: rgb(10,124,255);
+    color: white;
+    border-radius: 50%;
+}
+button#phone{
+    position: fixed;
+    bottom: 20%;
+    right: 1%;
+    z-index: 1000;
+    border: none;
+    background-color: rgb(228,56,64);
+    color: white;
+    border-radius: 50%;
+}
+.contact{
+    padding: 10px;
+    font-size: xx-large;
+}
