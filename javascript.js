@@ -34,3 +34,7 @@ var btnTop = document.getElementById("pushToTop");
 function toTheTop() {
   document.documentElement.scrollTop = 0;
 }
+
+function changeImg(id, imageLink){
+  document.getElementById(id).src=imageLink;
+}
