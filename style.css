@@ -189,7 +189,7 @@ a.model-name {
 }
 
 .more {
-    margin-top: 10px;
+    margin: 30px;
     text-align: center;
 }
 
@@ -247,7 +247,8 @@ button#detail9 {
 .section-title {
     text-align: center;
     font-size: xx-large;
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 img.avatar {
@@ -264,7 +265,8 @@ section.comment {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 0.5em;
+    height: 100%;
 }
 
 .customer-rate {
@@ -413,4 +415,44 @@ button#phone{
 .contact{
     padding: 10px;
     font-size: xx-large;
+}
+
+.submenu{
+    z-index: 1000;
+    background-color: white;
+    margin-top: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+}
+.drp:hover .submenu{
+    display: block;
+}
+.submenu-item, .submenu-item-title{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+.submenu-item a{
+    color: gray;
+    text-decoration: none;
+}
+.submenu-item-title a{
+    color: black;
+    text-decoration: none;
+}
+
+button.change-button{
+    border-radius: 50%;
+    border: 1px transparent solid;
+}
+
+button.change-button:hover{
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+button.change-button img{
+    width: 1em;
+    background-color: none;
 }
